@@ -1,6 +1,12 @@
 Configuration
 ==============
 
+.. image:: https://travis-ci.org/Digitalxero/configuration.svg?branch=master
+    :target: https://travis-ci.org/Digitalxero/configuration
+
+.. image:: https://coveralls.io/repos/Digitalxero/configure/badge.svg?branch=master
+    :target: https://coveralls.io/r/Digitalxero/configure?branch=master
+
 Configuration is a thin wrapper around PyYAML which extends already readable and powerful YAML with inheritance, composition and (so called) “object-graph configuration” features.
 
 .. note::
