@@ -7,7 +7,8 @@ def test_TagRegistry_is_borg_style_singleton():
     default_constructors = {}
     default_constructors.update(tags1.tag_constructors)
 
-    def test(*args): pass
+    def test(*args): pass  # noqa
+
     tags1.register_tag(tag='test', constructor=test)
 
     assert tags1 is not tags2
@@ -22,7 +23,9 @@ def test_TagRegistry_register_tag_representer():
     default_representers = {}
     default_representers.update(tags.tag_representers)
 
-    def test(*args): pass
+    def test(*args):
+        pass
+
     tags.register_tag(None, object, None, test)
 
     for data_type, representer in tags.tag_representers:
@@ -37,7 +40,9 @@ def test_TagRegistry_register_tag_construct_single_tag():
     default_constructors = {}
     default_constructors.update(tags.tag_constructors)
 
-    def test(*args): pass
+    def test(*args):
+        pass
+
     tags.register_tag(tag='test', constructor=test)
 
     for tag, constructor in tags.tag_constructors:
@@ -52,9 +57,11 @@ def test_TagRegistry_register_tag_construct_multi_tag():
     default_constructors = {}
     default_constructors.update(tags.tag_constructors)
 
-    new_tags = ['test','test1','test2']
+    new_tags = ['test', 'test1', 'test2']
 
-    def test(*args): pass
+    def test(*args):
+        pass
+
     tags.register_tag(tag=','.join(new_tags), constructor=test)
 
     found = []

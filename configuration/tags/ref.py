@@ -1,5 +1,3 @@
-from yaml import MarkedYAMLError
-
 from ._base import TagRegistry
 from ..errors import ConfigurationError
 

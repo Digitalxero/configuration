@@ -1,6 +1,5 @@
 
-from yaml.constructor import (ScalarNode, SequenceNode,
-                              MappingNode, ConstructorError)
+from yaml.constructor import (SequenceNode, MappingNode, ConstructorError)
 
 from ._base import TagRegistry
 from ..errors import ConfigurationError

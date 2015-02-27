@@ -55,8 +55,8 @@ def test_ref_tag_allows_a_suffix(cfg_file):
 
 def test_ref_tag_allows_a_ref_as_a_suffix(cfg_file):
     config = Configuration(cfg_file)
-    expected = (config.some.dot.separated.path.to.a.value
-                + config.some.dot.separated.path.to.a.value)
+    expected = (config.some.dot.separated.path.to.a.value +
+                config.some.dot.separated.path.to.a.value)
 
     assert config.suffix_ref_value == expected
 

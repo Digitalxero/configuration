@@ -9,6 +9,6 @@ install:
 before_script:
     - pip install -r test_requirements.pip
 script:
-    - py.test configuration --strict --cov=configuration --cov-report=term-missing
+    - py.test configuration --strict --cov=configuration --cov-report=term-missing --pep8
 after_success:
   - coveralls
